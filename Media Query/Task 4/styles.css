@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0px;
+}
+
+.grid-container {
+    gap: 20px;
+    height: 100vh;
+    display: grid;
+    padding: 20px;
+    text-align: center;
+    grid-template-columns: 1fr;
+    background-color: #fff8f8;
+}
+
+.grid-item {
+    padding: 20px;
+    color: #fff;
+    font-size: 24px;
+}
+
+/* Individual box styles */
+.item1 {
+    background-color: red;
+}
+
+.item2 {
+    background-color: green;
+}
+
+.item3 {
+    background-color: blue;
+}
+
+.item4 {
+    background-color: chocolate;
+}
+
+/* Media queries to change layout as screen size changes */
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "X X X"
+            "X X X"
+            "X X X";
+    }
+}

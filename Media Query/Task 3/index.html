@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3 - Responsive Navbar</title>
+    <style>
+        .navbar {
+            display: flex;
+            background-color: black;
+            justify-content: space-around;
+        }
+
+        .nav-link {
+            padding: 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Media query to make it a vertical list and change background color */
+        @media (max-width: 768px) {
+            .navbar {
+                text-align: center;
+                flex-direction: column;
+                background-color: gray;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#">Services</a>
+        <a class="nav-link" href="#">Portfolio</a>
+        <a class="nav-link" href="#">Contact</a>
+</body>
+
+</html>
